@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vgm2syx"
+version = "0.1.0"
+description = "Extract YM2151 voices from VGM/VGZ into TX81Z SysEx banks"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Masanao Hayashi"}]
+dependencies = []
+
+[project.scripts]
+vgm2syx = "vgm2syx:main"
+
+[project.urls]
+Repository = "https://github.com/masanaohayashi/vgm2syx"
+
+[tool.setuptools]
+py-modules = ["vgm2syx"]
